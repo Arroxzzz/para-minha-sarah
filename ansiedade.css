@@ -8,7 +8,7 @@ h2, p{
 }
 
 body {
-  padding-top: 20px;
+  padding-top: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
