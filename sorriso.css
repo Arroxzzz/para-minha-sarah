@@ -1,0 +1,124 @@
+h2, p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:black;
+    
+    padding: auto;
+}
+
+.content-coracao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.texto {
+    margin-top: 20px; /* Espaço entre as divs e o texto */
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 768px) {
+    /* Estilos para telas menores, como tablets e celulares */
+    .content-coracao {
+        margin-top: 20px; /* Espaço adicional no topo */
+    }
+    .texto {
+        margin-top: 10px; /* Espaço menor entre as divs e o texto */
+        font-size: 16px; /* Tamanho de fonte menor */
+    }
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.item {
+    flex: 1;
+}
+
+.content-coracao {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    margin: 50px auto;
+    animation: pulsa 220ms linear 0s infinite;
+  }
+  @keyframes pulsa {
+    0% {
+      transform: scale(0.9) rotate(0deg);
+    }
+    50% {
+      transform: scale(1) rotate(0deg);
+    }
+    70% {
+      transform: scale(1.1) rotate(0deg);
+    }
+    80% {
+      transform: scale(1.2) rotate(0deg);
+    }
+    100% {
+      transform: scale(1) rotate(0deg);
+    }
+  }
+  .square {
+    transform: rotate(45deg);
+    width: 50px;
+    height: 50px;
+    background: #ee0b0b;
+    position: absolute;
+    top: 30px;
+  }
+  .circle:after,
+  .circle:before {
+    content: "";
+    position: absolute;
+    width: 54px;
+    height: 55px;
+    border-radius: 50%;
+    background: #ee0b0b;
+  }
+  .circle:after {
+    left: 5px;
+    top: 6px;
+  }
+  .circle:before {
+    right: 5px;
+    top: 6px;
+  }
+  .textinho{
+    color: red;
+  }
+a{
+    text-decoration: none;
+}
+.red{
+  color: red;
+}
+
